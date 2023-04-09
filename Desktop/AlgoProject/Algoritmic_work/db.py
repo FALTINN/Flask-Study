@@ -20,11 +20,10 @@ def debug(con, text, place="base", type="INFO"):
     
 
 file_name = "config_algoritmic.json"
-
 with open(file_name, 'r') as config:
     my_data = json.load(config)
     
-    
+
 con = connect(
         host = my_data['server'],
         user = my_data['user'],
